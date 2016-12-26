@@ -1,0 +1,35 @@
+{
+    "name": "jedostyle/contao_isotope_attribute_listings",
+    "description": "List attribute for Isotope eCommerce",
+    "keywords": ["contao", "isotope", "radioimage", "radio image", "variants"],
+    "type": "contao-module",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Jens Doberenz (jedoStyle)",
+            "email": "github@jedo-style.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/jedoStyle/contao_isotope_attribute_listings/issues",
+        "source": "https://github.com/jedoStyle/contao_isotope_attribute_listings"
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "contao/core-bundle": "^3.5.20 | ^4.3.0",
+        "contao-community-alliance/composer-plugin": "~2.4 | ~3.0",
+        "isotope/isotope-core": "~2.3"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+       "contao": {
+            "sources": {
+                "system/modules/isotope_attribute_listings": "system/modules/isotope_attribute_listings"
+            }
+        }
+    }
+
+}
