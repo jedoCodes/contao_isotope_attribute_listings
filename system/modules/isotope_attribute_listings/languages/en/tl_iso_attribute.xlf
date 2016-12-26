@@ -21,6 +21,24 @@
         <source>Here you can set one or more classes.</source>
         <target>Hier können Sie beliebig viele Klassen eingeben.</target>
       </trans-unit>
+
+      <trans-unit id="tl_iso_attribute.icontolistitem.0">
+        <source>add List-Item Icons</source>
+        <target>icon zu Eintägen hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="tl_iso_attribute.icontolistitem.1">
+        <source>Please choose to add icons to listitems.</source>
+        <target>Bitte wählen Sie aus, um Icons zur Liste hinzuzufügen.</target>
+      </trans-unit>
+      <trans-unit id="tl_iso_attribute.listitemicon.0">
+        <source>Icon Class</source>
+        <target>Icon Klasse</target>
+      </trans-unit>
+      <trans-unit id="tl_iso_attribute.listitemicon.1">
+        <source>Here you can set one or more classes.</source>
+        <target>Hier können Sie beliebig viele Icon Klassen eingeben.</target>
+      </trans-unit>
+
       <trans-unit id="tl_iso_attribute.ordered">
         <source>ordered list</source>
         <target>nummerierte Liste</target>

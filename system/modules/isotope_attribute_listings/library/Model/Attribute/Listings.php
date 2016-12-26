@@ -27,16 +27,29 @@ class Listings extends Attribute implements IsotopeAttribute
     public function generate(IsotopeProduct $objProduct, array $arrOptions = array())
     {
 		$varValue = parent::getValue($objProduct);
-
         $varValue = deserialize($varValue);
 
+        if (empty($varValue)) {
 
-    	return $this->generateListings($varValue);
+            return '';
+
+        } else {
+
+            return $this->generateListings($varValue);
+
+        }
+
     }
 
     public function generateListings(array $arrValues)
     {
         $listtag = ($this->listtype == 'ordered') ? 'ol' : 'ul';
+
+        if ($this->icontolistitem) {
+            $itemicon = "<span class='" . $this->listitemicon. "'></span>";
+        } else {
+            $itemicon = "";
+        }
 
         $strBuffer = "\n<".$listtag." class='".$this->listclass."'>";
 
@@ -45,7 +58,7 @@ class Listings extends Attribute implements IsotopeAttribute
         foreach ($arrValues as $value) {
             $class = trim(($current == 0 ? 'first' : '') . ($current == $last ? ' last' : ''));
 
-            $strBuffer .= "\n<li" . ($class != '' ? ' class="' . $class . '"' : '') . '>' . $value . '</li>';
+            $strBuffer .= "\n<li" . ($class != '' ? ' class="' . $class . '"' : '') . '>' . $itemicon . $value . '</li>';
 
             $current += 1;
         }
