@@ -1,4 +1,14 @@
 <?php
+/**
+ * List attribute for Isotope eCommerce and Contao CMS.
+ * Copyright (c) 2016 jedo.Codes
+ *
+ * @category ContaoModule
+ * @package  jedocodes/sitebuilder-bundle
+ * @author   jedo.Codes <develop@jedo.codes>
+ * @link     https://github.com/jedocodes/contao_isotope_attribute_listings
+ */
+
 
 namespace Isotope\Model\Attribute;
 
@@ -56,9 +66,9 @@ class Listings extends Attribute implements IsotopeAttribute
         $current = 0;
         $last    = count($arrValues) - 1;
         foreach ($arrValues as $value) {
-            $class = trim(($current == 0 ? 'first' : '') . ($current == $last ? ' last' : ''));
+            $class = trim(($current === 0 ? 'first' : '') . ($current === $last ? ' last' : ''));
 
-            $strBuffer .= "\n<li" . ($class != '' ? ' class="' . $class . '"' : '') . '>' . $itemicon . $value . '</li>';
+            $strBuffer .= "\n<li" . ($class !== '' ? ' class="' . $class . '"' : '') . '>' . $itemicon . $value . '</li>';
 
             $current += 1;
         }

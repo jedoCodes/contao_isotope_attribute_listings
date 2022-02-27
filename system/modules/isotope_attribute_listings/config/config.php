@@ -1,11 +1,12 @@
 <?php
-
 /**
- * listings attribute for Isotope eCommerce
+ * List attribute for Isotope eCommerce and Contao CMS.
+ * Copyright (c) 2016 jedo.Codes
  *
- * @copyright jedoStyle 2016 <http://www.jedo-style.de>
- * @author Jens Doberenz <github@jedo-style.de>
- * @licence LGPL
+ * @category ContaoModule
+ * @package  jedocodes/sitebuilder-bundle
+ * @author   jedo.Codes <develop@jedo.codes>
+ * @link     https://github.com/jedocodes/contao_isotope_attribute_listings
  */
 
 $GLOBALS['BE_FFL']['Listings']           = 'Contao\ListWizard';
