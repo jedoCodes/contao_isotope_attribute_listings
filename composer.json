@@ -6,14 +6,15 @@
     "license": "LGPL-3.0+",
     "authors": [
         {
-            "name": "Jens Doberenz (jedoStyle)",
-            "email": "github@jedo-style.de",
+            "name": "jedoCodes",
+            "email": "develop@jedo.codes",
+            "homepage": "https://jedo.codes",
             "role": "Developer"
         }
     ],
     "support": {
-        "issues": "https://github.com/jedoStyle/contao_isotope_attribute_listings/issues",
-        "source": "https://github.com/jedoStyle/contao_isotope_attribute_listings"
+        "issues": "https://github.com/jedoCodes/contao_isotope_attribute_listings/issues",
+        "source": "https://github.com/jedoCodes/contao_isotope_attribute_listings"
     },
     "require": {
         "php": ">=5.5.0",
