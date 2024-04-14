@@ -3,7 +3,7 @@
     "description": "List attribute for Isotope eCommerce and Contao CMS.",
     "keywords": ["contao", "isotope", "radioimage", "radio image", "variants"],
     "type": "contao-module",
-    "license": "LGPL-3.0+",
+    "license": "LGPL-3.0-or-later",
     "authors": [
         {
             "name": "jedoCodes",
@@ -13,12 +13,12 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/jedoCodes/contao_isotope_attribute_listings/issues",
-        "source": "https://github.com/jedoCodes/contao_isotope_attribute_listings"
+        "issues": "https://github.com/jedocodes/contao_isotope_attribute_listings/issues",
+        "source": "https://github.com/jedocodes/contao_isotope_attribute_listings"
     },
     "require": {
         "php": "^7.4 || ^8.0",
-        "contao/core-bundle": "^4.9",
+        "contao/core-bundle": "^4.9 || ^4.13",
         "isotope/isotope-core": "^2.3"
     },
     "extra": {
